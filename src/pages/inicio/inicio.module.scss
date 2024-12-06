@@ -1,5 +1,5 @@
 
-.post{
+.background{
     background-image: url('../../assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,7 @@
     }
 }
 
-.devoDoar{
+.section2{
     height: 85vh;
     div{
         height: 20vh;
@@ -29,13 +29,13 @@
     }
 }
 
-.boxCard{
+.cards{
    
     display: flex;
     height: 60vh;
     align-items: center;
     justify-content: space-evenly;
-    article{
+    div{
         width: 20%;
         height: 80%;
         background-color: rgba(1, 87, 148, 0.3);
@@ -55,36 +55,28 @@
     }
 }
 
-@media(max-width: 780px){
-
-    .post{
-        justify-content: center;
-        h2{
-            
-            width: 80%;
-            margin-left: 0;
-            text-align: center;
-        }
-    }
-
-}
-
 @media(max-width: 1000px){
-  .boxCard{
-    article{
+  .cards{
+    div{
+        justify-content: space-evenly;
+        height: 30vh;
     p{
-        font-size: 1.5vw;
+        font-size: 1.2rem;
+        width: 18vw;
+    }
+    img {
+        height: 7vh;
+        width: 10vw;
     }
    }
 }
 }
 
 @media(max-width: 780px){
-    .devoDoar{
+    .section2{
         
         height: 120vh;
         div{
-            
             justify-content: center;
             h2{
                 margin-left: 0;
@@ -92,23 +84,44 @@
         }
     }
 
-    .boxCard{
-        
+    .cards{
         height: auto;
         flex-wrap: wrap;
         gap: 20px;
-        article{
+        div{
             width: 230px;
-            height: 38vh;
+            justify-content: space-evenly;
+            height: 28vh;
             p{
-                font-size: 14px;
+                font-size: 18px;
+                width: 28vw;
+            }
+            img{
+                height: 7vh;  
+                width: 10vw;             
             }
         }
     }
 }
 
 @media(max-width: 479px){
-    .devoDoar{
+    .section2{
         height: 190vh;
+        .cards{
+            div{
+                border: solid green;
+                height: 16vh;
+                width: 60vw;
+                justify-content: space-evenly;
+                p {
+                    text-align: center;
+                    width: 45vw;
+                }
+                img{
+                    height: 6vh;  
+                    width: 16vw;             
+                }
+            }
+        }
     }
 }
